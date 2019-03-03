@@ -19,10 +19,12 @@ namespace MvcMovie
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-            routes.MapRoute(
-                name: "Hello",
-                url: "{controller}/{action}/{name}/{id}"
-           );
+            // This is used when we want to pass in parameters rather than a query string to the Hello route
+
+           // routes.MapRoute(
+           //     name: "Hello",
+           //     url: "{controller}/{action}/{name}/{id}"
+           //);
         }
     }
 }
